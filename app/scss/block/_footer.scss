@@ -1,0 +1,23 @@
+.footer {
+  padding: 14px 0 32px;
+  &__requisites {
+    font-size: 12px;
+    line-height: 13px;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: none;
+  }
+}
+.menu {
+  text-align: center;
+  &__list-item {
+    line-height: 0;
+  }
+
+  &__list-link {
+    font-size: 17px;
+    line-height: 18px;
+    text-transform: none;
+    color: #380231;
+  }
+}

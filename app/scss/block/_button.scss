@@ -1,0 +1,58 @@
+.button {
+  display: block;
+  background: #790B6A;
+  border-radius: 30px;
+  border: none;
+  width: 250px;
+  height: 49px;
+  text-align: center;
+  color: #FFFFFF;
+  @extend %font-two;
+  line-height: 49px;
+  @media (max-width: 767px) {
+    width: 141px;
+    height: 30px;
+    line-height: 30px;
+  }
+  &_header {
+    margin-top: 124px;
+    @media (max-width: 767px) {
+      display: none;
+      margin: 0 auto;
+      margin-top: 26px;
+    }
+  }
+  &_header-none {
+    display: none;
+    @media (max-width: 767px) {
+      display: block;
+
+    }
+  }
+  &_skills {
+    margin: 0 auto;
+    margin-top: 50px;
+    @media (max-width: 767px) {
+      margin-top: 20px;
+    }
+  }
+  &_format {
+    margin: 0 auto;
+    margin-top: 108px;
+    @media (max-width: 767px) {
+      margin-top: 52px;
+    }
+  }
+  &_programm {
+    margin: 0 auto;
+    margin-top: 28px;
+  }
+  &_reviews {
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+  &_price {
+    margin: 0 auto;
+    margin-top: 34px;
+  }
+}

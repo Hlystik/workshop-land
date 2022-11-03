@@ -1,0 +1,63 @@
+.programm {
+  padding: 76px 0 48px;
+  &__descr {
+    @extend %font-two;
+    line-height: 150%;
+  }
+  &__img-top {
+    display: none;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 65px;
+    margin-top: 28px;
+  }
+
+  &__items {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 370px;
+  }
+  &__items+
+  &__items {
+    margin-left: 10px;
+  }
+  &__list {
+    margin-top: 12px;
+  }
+  &__list-item {
+    font-size: 14px;
+    line-height: 120%;
+  }
+  &__box-accord {
+    display: none;
+    height: 32px;
+    background: #F9F1DE;
+    border-radius: 10px;
+    padding: 0 12px 0 15px;
+    position: relative;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #380231;
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: rgba(121, 11, 106, 0.25);
+      background-image: url(../../images/cross.svg);
+      background-position: center;
+      background-repeat:no-repeat;
+      width: 20px;
+      height: 20px;
+      right: 12px;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all .5s;
+    }
+    &_active::before {
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+}

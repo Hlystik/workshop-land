@@ -1,0 +1,66 @@
+.title {
+  @extend %title-font;
+  &_header {
+    margin-top: 16px;
+    @media (max-width:767px) {
+      text-align: center;
+      margin-top: 19px;
+    }
+  }
+  &_mini {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 100%;
+    @media (max-width:767px) {
+      display: none;
+    }
+  }
+  &_programm {
+    position: relative;
+    max-width: 543px;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 69px;
+      height: 69px;
+      background-image: url(../images/read_online.svg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      right: -115px;
+      top: 0;
+    }
+    @media (max-width: 991px) {
+      &::after {
+        width: 46px;
+        height: 48px;
+        background-size: contain;
+        right: 39px;
+      }
+    }
+    @media (max-width: 767px) {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  &_mini-1 {
+    font-size: 40px;
+    line-height: 100%;
+    margin-top: 30px;
+    @media (max-width: 991px) {
+      margin-top: 15px;
+    }
+    @media (max-width: 767px) {
+      font-size: 20px;
+    }
+  }
+  &_price-mini {
+    font-size: 41px;
+    line-height: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

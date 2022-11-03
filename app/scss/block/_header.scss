@@ -1,0 +1,26 @@
+.header {
+  padding: 150px 0 68px;
+  &__subtitle {
+    @extend %font-two;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+  }
+  
+  &__descr {
+    margin-top: 98px;
+  }
+
+  &__descr-text+
+  &__descr-text {
+    margin-top: 26px;
+  }
+
+  &__img {
+    margin-top: 20px;
+    margin-right: 57px;
+  }
+}
+.button {
+}

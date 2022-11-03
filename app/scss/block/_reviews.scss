@@ -1,0 +1,33 @@
+.reviews {
+  padding: 74px 0;
+  &__descr {
+    line-height: 150%;
+    margin-top: 20px;
+  }
+}
+.slick-slide {
+  width: 335px;
+}
+.slider {
+  margin-top: 44px;
+  max-width: 928px;
+  margin-left: 40px;
+  position: relative;
+  &__item-img {
+    border-radius: 10px;
+  }
+}
+.slider-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+}
+.slider-arrowleft {
+  left: -64px;
+}
+.slider-arrowright {
+  right: -64px;
+}
+
